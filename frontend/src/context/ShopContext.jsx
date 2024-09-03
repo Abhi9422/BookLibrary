@@ -10,7 +10,7 @@ const ShopContextProvider = ({ children }) => {
   const[bookId , setBookId] = useLocalStorage("bookId", "");
   const [data, setData] = useState(null);
   const [author, setAuthor] = useLocalStorage("author", {});
-  const url = "http://localhost:4000";
+  const url = "https://book-library-qwvo.onrender.com";
   useEffect(() => {
     axios
       .get(`${url}/api/books/list`)
