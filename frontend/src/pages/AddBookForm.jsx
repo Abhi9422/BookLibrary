@@ -45,17 +45,16 @@ const AddBookForm = () => {
       const response = await axios.post(`${url}/api/books/add`, data);
       toast.success("Book added successfully!");
 
-      // Reset form after successful submission
-      // setFormData({
-      //   title: "",
-      //   description: "",
-      //   genre: "",
-      //   price: "",
-      //   tags: "",
-      //   image: null,
-      //   ratings: "",
-      //   reviewsCount: "",
-      // });
+      setFormData({
+        title: "",
+        description: "",
+        genre: "",
+        price: "",
+        tags: "",
+        image: null,
+        ratings: "",
+        reviewsCount: "",
+      });
     } catch (error) {
       toast.error("Something went wrong. Please try again." ,error.data.message);
     }
