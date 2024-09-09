@@ -6,7 +6,7 @@ const CollectionItem = ({ image, name, price, id, ratings }) => {
 
   // Function to generate star rating based on reviews
   const renderStars = (rating) => {
-    const fullStars = rating;
+    const fullStars = Math.round(rating)
 
     const emptyStars = 5 - fullStars;
 
