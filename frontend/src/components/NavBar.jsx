@@ -121,7 +121,7 @@ const NavBar = ({ setShowSearch, showSearch }) => {
           } transition-transform duration-300 ease-in-out sm:hidden`}
         >
           <div className="p-6 flex justify-between items-center border-b-2">
-            <p className="text-2xl font-serif">ShopFerry...</p>
+            <p className="text-2xl font-serif">BookStore...</p>
             <button
               onClick={() => setShowSidebar(false)}
               className="text-xl font-semibold"
